@@ -16,6 +16,6 @@ public class Subway {
 	}
 	
 	public void showInfo() {
-		System.out.println("승객은 " + passengerCount + "명이고, 수입은 " + money + "원 입니다.");
+		System.out.println(lineNumber + " 총 승객은 " + passengerCount + "명이고, 수입은 " + money + "원 입니다.");
 	}
 }

@@ -1,4 +1,4 @@
-package inheritance;
+package virtualfunction;
 
 public class TestA {
 	int num;

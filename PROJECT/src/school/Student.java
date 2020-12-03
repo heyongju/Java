@@ -7,9 +7,9 @@ import javax.security.auth.Subject;
 public class Student {
 	private int studentID; //학번
 	private String studentName; //이름
-	private Subject majorSubject //필수 과목
+	private Subject majorSubject; //필수 과목
 	
-	private ArrayList<Score> scoreList = new ArrayList<score>(); 
+	private ArrayList<Score> scoreList = new ArrayList<Score>(); 
 	//학생이 수강한 과목의 점수 리스트. addSubjectscore()메서드가 호출되면 이 리스트에 추가됨.
 	
 	public Student(int studentID, String studentName, Subject majorSubject) {
@@ -46,11 +46,11 @@ public class Student {
 		this.majorSubject = majorSubject;
 	}
 	
-	public void ArrayList<Score> getScoreList(){
+	public ArrayList<Score> getScoreList(){
 		return scoreList;
 	}
 	
-	public void ArrayList<Score> setScoreList(Array<Score> scoreList){
+	public void setScoreList(ArrayList<Score> scoreList){
 		this.scoreList = scoreList;
 	}
 }

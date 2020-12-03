@@ -9,12 +9,13 @@ public class Subject {
 	private int subjectId; //과목 고유 번호
 	private int gradeType; //학점 평가 정책
 	
-	private ArrayList<Student> StudentList = new ArrayList<Student>();
+	private ArrayList<Student> StudentList = new ArrayList<Student>(); 
+	//이 과목을 수강 신청한 학생 리스트. regitser()메서드를 호출하면 이 리스트에 추가됨.
 	
 	public Subject (String subjectName, int subjectId) {
 		this.subjectName = subjectName;
 		this.subjectId = subjectId;
-		this.gradeType = Define.AB_TYPE;
+		this.gradeType = Define.AB_TYPE; //학점 평가 정책은 기본으로A,B 방식을 사용함.
 	}
 
 	public String getSubjectName() {
@@ -50,7 +51,7 @@ public class Subject {
 	}
 
 	public void register(Student student) {//수강신청 메서드
-		studentList.add(student);
+		StudentList.add(student);
 	}
 	
 }

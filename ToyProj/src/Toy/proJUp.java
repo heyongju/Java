@@ -113,6 +113,9 @@ public class proJUp {
 						barLeftPos.y += 5;
 						barRightPos.y += 5;
 					}
+					if(barLeftPos.y > 400 - barHeight)
+						barLeftPos.y = 400 - barHeight;
+
 					if(dir ==0) {  // 0 == 공이 오른쪽 위로갈 때 
 						ballPos.x += ballSpeedX;
 						ballPos.y -= ballSpeedY;
